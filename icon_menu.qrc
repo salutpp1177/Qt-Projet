@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/mainwidicons">
+        <file>image/soigneur.jpg</file>
+        <file>image/patient.jpg</file>
+    </qresource>
+</RCC>
