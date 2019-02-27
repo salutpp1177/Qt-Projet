@@ -30,14 +30,16 @@ SOURCES += \
     identification.cpp \
     dialogajouterpatient.cpp \
     dialogajoutersoigneur.cpp \
-    formapropos.cpp
+    formapropos.cpp \
+    patient.cpp
 
 HEADERS += \
         mainwindow.h \
     identification.h \
     dialogajouterpatient.h \
     dialogajoutersoigneur.h \
-    formapropos.h
+    formapropos.h \
+    patient.h
 
 FORMS += \
         mainwindow.ui \
