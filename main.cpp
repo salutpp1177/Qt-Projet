@@ -1,5 +1,5 @@
 #include <QApplication>
-
+#include <QDialog>
 #include "mainwindow.h"
 #include "identification.h"
 #include "formapropos.h"
@@ -10,10 +10,14 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    Identification i;
-//    FormAPropos i;
-    MainWindow i;
+    Identification i;
+    MainWindow w;
     i.show();
+
+    if(i.exec() == QDialog::Accepted) {
+        w.show();
+
+    }
 
     return a.exec();
 }

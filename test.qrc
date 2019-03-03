@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/test1">
+        <file>C:/Users/lihua/Pictures/cve.PNG</file>
+    </qresource>
+</RCC>

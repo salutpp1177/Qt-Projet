@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -31,7 +31,22 @@ SOURCES += \
     dialogajouterpatient.cpp \
     dialogajoutersoigneur.cpp \
     formapropos.cpp \
-    patient.cpp
+    patient.cpp \
+    soigneur.cpp \
+    typeparmi.cpp \
+    controller/verificationcontroller.cpp \
+    c_init_bd.cpp \
+    controller/verificationcontroller.cpp \
+    model/patient.cpp \
+    model/soigneur.cpp \
+    model/typeparmi.cpp \
+    c_init_bd.cpp \
+    dialogajouterpatient.cpp \
+    dialogajoutersoigneur.cpp \
+    formapropos.cpp \
+    identification.cpp \
+    main.cpp \
+    mainwindow.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -39,7 +54,21 @@ HEADERS += \
     dialogajouterpatient.h \
     dialogajoutersoigneur.h \
     formapropos.h \
-    patient.h
+    patient.h \
+    soigneur.h \
+    typeparmi.h \
+    controller/verificationcontroller.h \
+    c_init_bd.h \
+    controller/verificationcontroller.h \
+    model/patient.h \
+    model/soigneur.h \
+    model/typeparmi.h \
+    c_init_bd.h \
+    dialogajouterpatient.h \
+    dialogajoutersoigneur.h \
+    formapropos.h \
+    identification.h \
+    mainwindow.h
 
 FORMS += \
         mainwindow.ui \
