@@ -20,17 +20,17 @@ Patient::Patient() {
     this->iPriorite = 0;
 }
 
-Patient::Patient(string nom, string prenom, string add, string ville, string comment, int tel, int post, int d, int prior) {
-    this->sNom = nom;
-    this->sPrenom = prenom;
-    this->sVille = ville;
-    this->sAdress = add;
-    this->sComments = comment;
-    this->iDuree = d;
-    this->iCodePostale = post;
-    this->iNumTelephone = tel;
-    this->iPriorite = prior;
-}
+//Patient::Patient(string nom, string prenom, string add, string ville, string comment, int tel, int post, int d, int prior) {
+//    this->sNom = nom;
+//    this->sPrenom = prenom;
+//    this->sVille = ville;
+//    this->sAdress = add;
+//    this->sComments = comment;
+//    this->iDuree = d;
+//    this->iCodePostale = post;
+//    this->iNumTelephone = tel;
+//    this->iPriorite = prior;
+//}
 
 Patient::~Patient() {
 
@@ -46,23 +46,23 @@ void Patient::triIDResource() {
 
 
 
-void Patient::setNom(string str) {
+void Patient::setNom(QString &str) {
     this->sNom = str;
 }
 
-void Patient::setPrenom(string str) {
+void Patient::setPrenom(QString &str) {
     this->sPrenom = str;
 }
 
-void Patient::setAdress(string str) {
+void Patient::setAdress(QString &str) {
     this->sAdress = str;
 }
 
-void Patient::setVille(string str) {
+void Patient::setVille(QString &str) {
     this->sVille = str;
 }
 
-void Patient::setComments(string str) {
+void Patient::setComments(QString &str) {
     this->sComments = str;
 }
 

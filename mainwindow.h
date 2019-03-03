@@ -5,6 +5,7 @@
 #include <dialogajouterpatient.h>
 #include <dialogajoutersoigneur.h>
 #include <formapropos.h>
+#include <QSqlTableModel>
 namespace Ui {
 class MainWindow;
 }
@@ -28,9 +29,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    DialogAjouterPatient dap;
-    DialogAjouterSoigneur das;
-    FormAPropos fap;
+    QSqlTableModel *model;
+//    DialogAjouterPatient dap;
+//    DialogAjouterSoigneur das;
+//    FormAPropos fap;
 };
 
 #endif // MAINWINDOW_H
