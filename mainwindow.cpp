@@ -6,8 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->ui->menuBar->addAction("Quitter");
-    this->ui->menuBar->addMenu("Ajouter");
+    ui->statusBar->showMessage("Vous avez connecté!");
+
 }
 
 MainWindow::~MainWindow()
@@ -24,17 +24,21 @@ void MainWindow::on_actionQuitter_triggered()
 
 void MainWindow::on_actionPatient_triggered()
 {
-    this->dap.show();
+    DialogAjouterPatient dap;
+    if(dap.exec() == QDialog::Accepted) {
+        model->select();
+        ui->statusBar->showMessage("Vous avez ajouté un patient.");
+    }
 }
 
 
 
 void MainWindow::on_actionPersonnel_de_soins_triggered()
 {
-    this->das.show();
+//    this->das.show();
 }
 
 void MainWindow::on_actionA_propos_triggered()
 {
-    this->fap.show();
+//    this->fap.show();
 }

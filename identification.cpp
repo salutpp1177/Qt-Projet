@@ -13,14 +13,17 @@ Identification::~Identification()
     delete ui;
 }
 
-void Identification::on_pushButton_clicked()
+void Identification::on_loginBtn_clicked()
 {
-    if(this->ui->lineEdit->text() == "user" && this->ui->lineEdit_2->text() == "pwd") {
+    verificationController verifierCtl;
+    if(verifierCtl.verifierLogin(ui->username->text(), ui->passwd->text())) {
         QMessageBox msg1(QMessageBox::Information,windowTitle(),"login succeed!", QMessageBox::Ok,this);
         if(msg1.exec() == QMessageBox::Ok) {
-            this->w.show();
+            accept();
         }
     } else {
+        ui->username->clear();
+        ui->passwd->clear();
         QMessageBox msg2(QMessageBox::Information,windowTitle(),"login failed",QMessageBox::Ok,this);
         msg2.exec();
     }
@@ -28,17 +31,14 @@ void Identification::on_pushButton_clicked()
 }
 
 
-void Identification::on_pushButton_2_clicked()
+void Identification::on_annulerBtn_clicked()
 {
     close();
 }
 
-void Identification::on_lineEdit_textEdited(const QString &arg1)
+void Identification::on_passwd_textEdited(const QString &arg1)
 {
-    if(arg1.length() < 4) {
-        this->ui->label_4->setText("La longueur est supérieure à 4!");
-    } else {
-        this->ui->label_4->setText("Veuillez saisir votre mot de passe!");
+    if(arg1.length() < 6) {
+        this->ui->label_4->setText("La longueur est supérieure à 6!");
     }
 }
-

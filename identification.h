@@ -2,8 +2,10 @@
 #define IDENTIFICATION_H
 
 #include <QDialog>
+#include <QString>
 #include <mainwindow.h>
 #include <qmessagebox.h>
+#include <controller/verificationcontroller.h>
 
 namespace Ui {
 class Identification;
@@ -18,11 +20,11 @@ public:
     ~Identification();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_loginBtn_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_annulerBtn_clicked();
 
-    void on_lineEdit_textEdited(const QString &arg1);
+    void on_passwd_textEdited(const QString &arg1);
 
 private:
     Ui::Identification *ui;

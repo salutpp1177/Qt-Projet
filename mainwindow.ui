@@ -24,14 +24,14 @@
        <item>
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="Rechercher">
           <property name="toolTip">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rechercher de Patient&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <attribute name="title">
-           <string>Tab 1</string>
+           <string>Recherche de Patient</string>
           </attribute>
           <widget class="QWidget" name="horizontalLayoutWidget">
            <property name="geometry">
@@ -184,7 +184,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="pushButton">
+             <widget class="QPushButton" name="rechercher">
               <property name="styleSheet">
                <string notr="true"/>
               </property>
@@ -208,7 +208,7 @@
          </widget>
          <widget class="QWidget" name="Planification">
           <attribute name="title">
-           <string>Tab 2</string>
+           <string>Planification</string>
           </attribute>
          </widget>
         </widget>
