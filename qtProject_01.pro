@@ -31,21 +31,10 @@ SOURCES += \
     dialogajouterpatient.cpp \
     dialogajoutersoigneur.cpp \
     formapropos.cpp \
-    patient.cpp \
-    soigneur.cpp \
-    typeparmi.cpp \
     controller/verificationcontroller.cpp \
     c_init_bd.cpp \
-    controller/verificationcontroller.cpp \
     model/patient.cpp \
     model/typeparmi.cpp \
-    c_init_bd.cpp \
-    dialogajouterpatient.cpp \
-    dialogajoutersoigneur.cpp \
-    formapropos.cpp \
-    identification.cpp \
-    main.cpp \
-    mainwindow.cpp \
     model/consult.cpp \
     model/compte.cpp \
     model/ressource.cpp \
@@ -57,20 +46,10 @@ HEADERS += \
     dialogajouterpatient.h \
     dialogajoutersoigneur.h \
     formapropos.h \
-    patient.h \
-    soigneur.h \
-    typeparmi.h \
     controller/verificationcontroller.h \
     c_init_bd.h \
-    controller/verificationcontroller.h \
     model/patient.h \
     model/typeparmi.h \
-    c_init_bd.h \
-    dialogajouterpatient.h \
-    dialogajoutersoigneur.h \
-    formapropos.h \
-    identification.h \
-    mainwindow.h \
     model/consult.h \
     model/compte.h \
     model/ressource.h \
