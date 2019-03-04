@@ -35,7 +35,7 @@ class Patient {
 //        Patient(string nom, string prenom, string add, string ville, string comment, int tel, int post, int d, int prior);
         ~Patient();
 
-
+        int getIdPatient() const {return idPateint; }
     QString getNom() const { return sNom; }
     QString getPrenom() const { return sPrenom; }
     QString getAdress() const { return sAdress; }
