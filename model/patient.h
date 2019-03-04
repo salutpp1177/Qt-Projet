@@ -7,7 +7,7 @@
 //
 
 #ifndef PATIENT_H
-#define PATEINT_H
+#define PATIENT_H
 
 #include <stdio.h>
 #include <cmath>
@@ -62,4 +62,4 @@ class Patient {
 
 
 };
-#endif /* Patient_hpp */
+#endif /* patient_hpp */

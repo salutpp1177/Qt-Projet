@@ -1,4 +1,4 @@
-#include "consult.h"
+#include "model/consult.h"
 
 Consult::Consult()
 {
