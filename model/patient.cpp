@@ -6,7 +6,7 @@
 //  Copyright © 2019 Yaqi. All rights reserved.
 //
 
-#include "Patient.h"
+#include "patient.h"
 
 Patient::Patient() {
     this->sNom = "nom";
