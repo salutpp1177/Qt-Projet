@@ -23,9 +23,9 @@ private slots:
 
     void on_actionPatient_triggered();
 
-    void on_actionPersonnel_de_soins_triggered();
+//    void on_actionPersonnel_de_soins_triggered();
 
-    void on_actionA_propos_triggered();
+//    void on_actionA_propos_triggered();
 
 private:
     Ui::MainWindow *ui;

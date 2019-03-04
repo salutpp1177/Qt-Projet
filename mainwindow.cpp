@@ -33,12 +33,12 @@ void MainWindow::on_actionPatient_triggered()
 
 
 
-void MainWindow::on_actionPersonnel_de_soins_triggered()
-{
+//void MainWindow::on_actionPersonnel_de_soins_triggered()
+//{
 //    this->das.show();
-}
+//}
 
-void MainWindow::on_actionA_propos_triggered()
-{
+//void MainWindow::on_actionA_propos_triggered()
+//{
 //    this->fap.show();
-}
+//}
