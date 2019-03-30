@@ -9,76 +9,92 @@
 #include "patient.h"
 
 Patient::Patient() {
+    this->idPateint = 0;
     this->sNom = "nom";
     this->sPrenom = "prenom";
     this->sVille = "ville";
     this->sAdress = "adress";
     this->sComments = "comment";
+    this->dDate =  QDate::currentDate();
     this->iDuree = 0;
-    this->iCodePostale = 0;
-    this->iNumTelephone = 0;
+    this->codePostale = 37000;
+    this->telephone = 00000000;
     this->iPriorite = 0;
 }
 
-//Patient::Patient(string nom, string prenom, string add, string ville, string comment, int tel, int post, int d, int prior) {
-//    this->sNom = nom;
-//    this->sPrenom = prenom;
-//    this->sVille = ville;
-//    this->sAdress = add;
-//    this->sComments = comment;
-//    this->iDuree = d;
-//    this->iCodePostale = post;
-//    this->iNumTelephone = tel;
-//    this->iPriorite = prior;
-//}
-
-Patient::~Patient() {
+Patient::~Patient()
+{
 
 }
 
-void Patient::addIDResource(int id) {
-    this->vIDResource.push_back(id);
+void Patient::setIdPatient(int id)
+{
+    this->idPateint = id;
 }
 
-void Patient::triIDResource() {
-    sort(this->getIDResource().begin(), this->getIDResource().end());
-}
-
-
-
-void Patient::setNom(QString &str) {
+void Patient::setNom(QString str)
+{
     this->sNom = str;
 }
 
-void Patient::setPrenom(QString &str) {
+void Patient::setPrenom(QString str)
+{
     this->sPrenom = str;
 }
 
-void Patient::setAdress(QString &str) {
+void Patient::setAdress(QString str)
+{
     this->sAdress = str;
 }
 
-void Patient::setVille(QString &str) {
+void Patient::setVille(QString str)
+{
     this->sVille = str;
 }
 
-void Patient::setComments(QString &str) {
+void Patient::setComments(QString str)
+{
     this->sComments = str;
 }
 
-void Patient::setNumTelephone(int i) {
-    this->iNumTelephone = i;
+void Patient::setTelephone(int telephone)
+{
+    this->telephone = telephone;
 }
 
-void Patient::setCodePostale(int i) {
-    this->iCodePostale = i;
+void Patient::setCodePostale(int codePost)
+{
+    this->codePostale = codePost;
 }
 
-void Patient::setDuree(int i) {
+void Patient::setDate(QDate d)
+{
+    this->dDate = d;
+}
+
+void Patient::setDuree(int i)
+{
     this->iDuree = i;
 }
 
-void Patient::setPriorite(int i) {
+void Patient::setPriorite(int i)
+{
     this->iPriorite = i;
+}
+
+void Patient::setIDResource(const vector<int> v_id)
+{
+    vIDResource=v_id;
+}
+
+void Patient::triIDResource()
+{
+    sort(this->getIDResource().begin(), this->getIDResource().end());
+}
+
+void Patient::addIDResource(int id)
+{
+
+    vIDResource.push_back(id);
 }
 

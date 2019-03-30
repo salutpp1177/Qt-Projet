@@ -17,7 +17,8 @@ public:
 
     int getIdTypeParmi() const { return this->idTypeParmi; }
     QString getTypeName() const { return this->typeName; }
-
+    void setIdTypeParmi(int id) { idTypeParmi = id; }
+    void setTypeName(QString str) { typeName = str; }
 };
 
 #endif // TYPEPARMI_H

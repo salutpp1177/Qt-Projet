@@ -5,7 +5,7 @@
 #include <QString>
 #include <mainwindow.h>
 #include <qmessagebox.h>
-#include <controller/verificationcontroller.h>
+#include <controller/ressourcecontroller.h>
 
 namespace Ui {
 class Identification;
@@ -28,7 +28,7 @@ private slots:
 
 private:
     Ui::Identification *ui;
-    MainWindow w;
+    ressourceController res_Ctrl;
 };
 
 #endif // IDENTIFICATION_H

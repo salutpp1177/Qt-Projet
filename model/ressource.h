@@ -9,7 +9,7 @@ private:
     int idRessource;
     QString sNom;
     QString sPrenom;
-    TypeParmi type;
+    int idType;
 
 public:
     Ressource();
@@ -18,11 +18,11 @@ public:
     int getIdRessource() const { return this->idRessource; }
     QString getNom() const { return  this->sNom; }
     QString getPrenom() const { return this->sPrenom; }
-    TypeParmi getType() const { return this->type; }
+    int getType() const { return this->idType; }
     void setPrenom(const QString &str) { this->sPrenom = str; }
     void setNom(const QString &str) { this->sNom = str; }
     void setIdRessource(int id) { this->idRessource = id; }
-    void setType(TypeParmi &t) { this->type = t; }
+    void setType(int id) { this->idType = id; }
 };
 
 #endif // RESSOURCE_H

@@ -9,22 +9,20 @@ class Consult
 {
 private:
     int IdConsult;
-    Patient patient;
-    Ressource ressource;
+    int IdPatient;
+    int IdRessource;
 
 public:
     Consult();
     ~Consult();
 
     int getIdConsult() const { return IdConsult; }
-    Patient getPatient() const { return patient; }
-    int getIdPatient() const { return patient.getIdPatient(); }
-    Ressource getRessource() const { return ressource; }
-    int getIdRessource() const {return ressource.getIdRessource(); }
+    int getPatient() const { return IdPatient; }
+    int getRessource() const { return IdRessource; }
 
     void setIdConsult(int id) { IdConsult = id; }
-    void setPatient(Patient &pat) { patient = pat; }
-    void setRessource(Ressource &res ) { ressource = res; }
+    void setPatient(int id) { IdPatient = id; }
+    void setRessource(int id) { IdRessource = id; }
 
 
 };

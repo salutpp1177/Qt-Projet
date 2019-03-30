@@ -24,7 +24,7 @@
        <item>
         <widget class="QTabWidget" name="tabWidget">
          <property name="currentIndex">
-          <number>1</number>
+          <number>2</number>
          </property>
          <widget class="QWidget" name="Rechercher">
           <property name="toolTip">
@@ -201,8 +201,60 @@
              <x>10</x>
              <y>100</y>
              <width>631</width>
-             <height>221</height>
+             <height>251</height>
             </rect>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="list">
+          <attribute name="title">
+           <string>Liste de Ressources</string>
+          </attribute>
+          <widget class="QTreeView" name="treeView">
+           <property name="geometry">
+            <rect>
+             <x>5</x>
+             <y>31</y>
+             <width>641</width>
+             <height>331</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>10</y>
+             <width>521</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>14</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#0000ff;&quot;&gt;Modifier &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;ou &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#fc0107;&quot;&gt;Supprimer &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;la ressource par double-clicked sur&lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#30a523;&quot;&gt; Id_Ressource&lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#000000;&quot;&gt;！&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="icon">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>0</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/icon/image/warning.png);</string>
+           </property>
+           <property name="text">
+            <string/>
            </property>
           </widget>
          </widget>
@@ -210,6 +262,52 @@
           <attribute name="title">
            <string>Planification</string>
           </attribute>
+          <widget class="QPushButton" name="pushButton_plan">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>70</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Planifier</string>
+           </property>
+          </widget>
+          <widget class="QTableView" name="tableView_plan">
+           <property name="geometry">
+            <rect>
+             <x>15</x>
+             <y>11</y>
+             <width>451</width>
+             <height>341</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>250</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Exporter...</string>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="dateEdit">
+           <property name="geometry">
+            <rect>
+             <x>480</x>
+             <y>20</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
          </widget>
         </widget>
        </item>
@@ -240,6 +338,8 @@
      </property>
      <addaction name="actionPatient"/>
      <addaction name="actionPersonnel_de_soins"/>
+     <addaction name="actionPsychologue"/>
+     <addaction name="actionModifier_Patient"/>
     </widget>
     <addaction name="menuAjouter"/>
     <addaction name="actionQuitter"/>
@@ -274,7 +374,10 @@
     <bool>false</bool>
    </attribute>
    <addaction name="actionPatient"/>
+   <addaction name="separator"/>
    <addaction name="actionPersonnel_de_soins"/>
+   <addaction name="actionPsychologue"/>
+   <addaction name="actionModifier_Patient"/>
   </widget>
   <action name="actionQuitter">
    <property name="text">
@@ -302,6 +405,16 @@
   <action name="actionA_propos">
    <property name="text">
     <string>A propos</string>
+   </property>
+  </action>
+  <action name="actionPsychologue">
+   <property name="text">
+    <string>Psychologue</string>
+   </property>
+  </action>
+  <action name="actionModifier_Patient">
+   <property name="text">
+    <string>Modifier Patient</string>
    </property>
   </action>
  </widget>

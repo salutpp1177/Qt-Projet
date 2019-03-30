@@ -4,3 +4,8 @@ Compte::Compte()
 {
 
 }
+
+Compte::~Compte()
+{
+
+}
