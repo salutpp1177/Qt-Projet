@@ -1,42 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>DialogAjouterSoigneur</class>
- <widget name="DialogAjouterSoigneur" class="QDialog">
+ <widget class="QDialog" name="DialogAjouterSoigneur">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>462</width>
+    <height>301</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget name="buttonBox" class="QDialogButtonBox">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>240</y>
-     <width>341</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>18</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Ajouter de Ressource&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="nom">
+       <property name="text">
+        <string>Nom *: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="prenom">
+       <property name="text">
+        <string>Prenom *:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEdit_prenom"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="type">
+       <property name="text">
+        <string>Type Parmi *:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="login">
+       <property name="text">
+        <string>** Login :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_login"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>**Mot de passe :</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="lineEdit_mdp"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>** Login (seulement pour informaticien)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_nom"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox">
+       <item>
+        <property name="text">
+         <string>Médecin A</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Médecin B</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Radiologue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Infirmière</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Kinésithérapeute</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Psychologue</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Informaticien</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="Ajouter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
  </widget>
- <pixmapfunction/>
  <resources/>
  <connections>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>Ajouter</sender>
    <signal>accepted()</signal>
    <receiver>DialogAjouterSoigneur</receiver>
    <slot>accept()</slot>
@@ -52,7 +160,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>buttonBox</sender>
+   <sender>Ajouter</sender>
    <signal>rejected()</signal>
    <receiver>DialogAjouterSoigneur</receiver>
    <slot>reject()</slot>

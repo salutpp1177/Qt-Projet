@@ -31,14 +31,24 @@ SOURCES += \
     dialogajouterpatient.cpp \
     dialogajoutersoigneur.cpp \
     formapropos.cpp \
-    controller/verificationcontroller.cpp \
     c_init_bd.cpp \
     model/patient.cpp \
     model/typeparmi.cpp \
     model/consult.cpp \
     model/compte.cpp \
     model/ressource.cpp \
-    dao/patientdao.cpp
+    dao/patientdao.cpp \
+    dao/ressourcedao.cpp \
+    dao/typeparmidao.cpp \
+    controller/ressourcecontroller.cpp \
+    dao/comptedao.cpp \
+    model/planification.cpp \
+    dialogmodifierressource.cpp \
+    dao/consultdao.cpp \
+    controller/consultcontroller.cpp \
+    dao/connectdatabase.cpp \
+    dialogpsychologue.cpp \
+    dialogmodifypatient.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -46,21 +56,34 @@ HEADERS += \
     dialogajouterpatient.h \
     dialogajoutersoigneur.h \
     formapropos.h \
-    controller/verificationcontroller.h \
     c_init_bd.h \
     model/patient.h \
     model/typeparmi.h \
     model/consult.h \
     model/compte.h \
     model/ressource.h \
-    dao/patientdao.h
+    dao/patientdao.h \
+    dao/ressourcedao.h \
+    dao/typeparmidao.h \
+    controller/ressourcecontroller.h \
+    dao/comptedao.h \
+    model/planification.h \
+    dialogmodifierressource.h \
+    dao/consultdao.h \
+    controller/consultcontroller.h \
+    dao/connectdatabase.h \
+    dialogpsychologue.h \
+    dialogmodifypatient.h
 
 FORMS += \
         mainwindow.ui \
     identification.ui \
     dialogajouterpatient.ui \
     dialogajoutersoigneur.ui \
-    formapropos.ui
+    formapropos.ui \
+    dialogmodifierressource.ui \
+    dialogpsychologue.ui \
+    dialogmodifypatient.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -70,4 +93,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     ressource.qrc \
     login.qrc \
-    icon_menu.qrc
+    icon_menu.qrc \
+    warn.qrc

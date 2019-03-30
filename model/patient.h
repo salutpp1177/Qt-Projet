@@ -15,7 +15,10 @@
 #include <vector>
 #include <QString>
 #include <algorithm>
+#include <QDate>
+
 using namespace std;
+
 class Patient {
     private :
         int idPateint;
@@ -24,37 +27,41 @@ class Patient {
         QString sAdress;
         QString sVille;
         QString sComments;
-        int iNumTelephone;
-        int iCodePostale;
+        int telephone;
+        int codePostale;
+        QDate dDate;
         int iDuree;
         int iPriorite;
         vector<int> vIDResource;
 
     public :
         Patient();
-//        Patient(string nom, string prenom, string add, string ville, string comment, int tel, int post, int d, int prior);
         ~Patient();
 
-        int getIdPatient() const {return idPateint; }
+    int getIdPatient() const {return idPateint; }
     QString getNom() const { return sNom; }
     QString getPrenom() const { return sPrenom; }
     QString getAdress() const { return sAdress; }
     QString getVille() const { return sVille; }
     QString getComments() const { return sComments; }
-    int getNumTelephone() const { return iNumTelephone; }
-    int getCodePostale() const { return iCodePostale; }
+    int getTelephone() const { return telephone; }
+    int getCodePostale() const { return codePostale; }
+    QDate getDate() const {return dDate;}
     int getDuree() const { return iDuree; }
     int getPriorite() const { return iPriorite; }
-    void setNom(QString &str) ;
-    void setPrenom(QString &str);
-    void setAdress(QString &str);
-    void setVille(QString &str);
-    void setComments(QString &str);
-    void setNumTelephone(int i);
-    void setCodePostale(int i);
+    void setIdPatient(int id);
+    void setNom(QString str) ;
+    void setPrenom(QString str);
+    void setAdress(QString str);
+    void setVille(QString str);
+    void setComments(QString str);
+    void setTelephone(int i);
+    void setCodePostale(int codePost);
+    void setDate(QDate d);
     void setDuree(int i);
     void setPriorite(int i);
     vector<int>& getIDResource() { return vIDResource; }
+    void setIDResource(const vector<int> v_id);
     void addIDResource(int id);
     void triIDResource();
 

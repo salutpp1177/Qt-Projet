@@ -4,3 +4,8 @@ Consult::Consult()
 {
 
 }
+
+Consult::~Consult()
+{
+
+}
