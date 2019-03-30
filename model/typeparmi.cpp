@@ -4,3 +4,9 @@ TypeParmi::TypeParmi()
 {
 
 }
+
+TypeParmi::~TypeParmi()
+{
+
+}
+

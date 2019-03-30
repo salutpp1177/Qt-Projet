@@ -4,3 +4,8 @@ Ressource::Ressource()
 {
 
 }
+
+Ressource::~Ressource()
+{
+
+}

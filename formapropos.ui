@@ -38,7 +38,7 @@
      <item>
       <widget class="QLabel" name="textlabel">
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#0d6a8f;&quot;&gt;Version &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;v1.0.0&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#0340ff;&quot;&gt;Créateurs &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Yaqi JIANG, Huajuan LI&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#0d6a8f;&quot;&gt;Version &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;v1.0.0&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#0340ff;&quot;&gt;Créateur &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;Yaqi JIANG&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
